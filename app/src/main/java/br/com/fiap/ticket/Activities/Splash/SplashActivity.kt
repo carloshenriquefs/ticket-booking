@@ -26,7 +26,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
-import br.com.fiap.ticket.MainActivity
+import br.com.fiap.ticket.Activities.Dashboard.DashboardActivity
 import br.com.fiap.ticket.R
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -38,7 +38,7 @@ class SplashActivity : AppCompatActivity() {
 
         setContent {
             SplashScreen(onGetStartedClick = {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, DashboardActivity::class.java))
             })
         }
     }
